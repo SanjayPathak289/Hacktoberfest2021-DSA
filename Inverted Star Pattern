@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int i, j, k, rows;
+	char ch;
+	
+	cout << "\nPlease Enter Inverted Pyramid Star Pattern Rows    =  ";
+	cin >> rows;
+	
+	cout << "\nPlease Enter Any Symbol to Print  =  ";
+	cin >> ch;	
+		
+	cout << "\n-----Inverted Pyramid Star Pattern-----\n";
+	for ( i = rows ; i >= 1; i-- )  
+	{
+		for ( j = 0 ; j <= rows - i; j++ ) 
+		{
+      		cout << " ";   	
+		}
+			
+		for(k = 0; k != (2 * i - 1); k++)
+		{
+			cout << ch;
+			
+		}
+		cout << "\n";
+	}
+
+ 	return 0;
+}
